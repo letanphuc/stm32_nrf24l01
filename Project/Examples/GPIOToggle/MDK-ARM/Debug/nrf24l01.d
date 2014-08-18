@@ -1,0 +1,16 @@
+.\debug\nrf24l01.o: ..\nrf24l01.c
+.\debug\nrf24l01.o: ..\nrf24l01.h
+.\debug\nrf24l01.o: C:\Keil\ARM\ARMCC\bin\..\include\stddef.h
+.\debug\nrf24l01.o: ..\SPI.h
+.\debug\nrf24l01.o: ..\..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\debug\nrf24l01.o: ..\..\..\..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+.\debug\nrf24l01.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\debug\nrf24l01.o: ..\..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
+.\debug\nrf24l01.o: ..\stm32f10x_conf.h
+.\debug\nrf24l01.o: ..\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h
+.\debug\nrf24l01.o: ..\..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\debug\nrf24l01.o: ..\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h
+.\debug\nrf24l01.o: ..\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h
+.\debug\nrf24l01.o: ..\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
+.\debug\nrf24l01.o: ..\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\debug\nrf24l01.o: ..\UART.h

@@ -1,0 +1,14 @@
+.\debug\uart.o: ..\UART.c
+.\debug\uart.o: ..\..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\debug\uart.o: ..\..\..\..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+.\debug\uart.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\debug\uart.o: ..\..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
+.\debug\uart.o: ..\stm32f10x_conf.h
+.\debug\uart.o: ..\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h
+.\debug\uart.o: ..\..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\debug\uart.o: ..\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h
+.\debug\uart.o: ..\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h
+.\debug\uart.o: ..\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
+.\debug\uart.o: ..\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\debug\uart.o: ..\UART.h
+.\debug\uart.o: C:\Keil\ARM\ARMCC\bin\..\include\stdio.h

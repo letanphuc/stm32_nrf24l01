@@ -1,0 +1,52 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+D:\Working\stsw-stm32078\an3268\stm32vldiscovery_package\Project\Examples\GPIOToggle\MDK-ARM\GPIOToggle.uvproj
+Project File Date:  08/18/2014
+
+<h2>Output:</h2>
+Build target 'GPIOToggle'
+linking...
+Program Size: Code=3592 RO-data=372 RW-data=36 ZI-data=1028  
+".\Debug\GPIOToggle.axf" - 0 Error(s), 0 Warning(s).
+2f10x_spi.c...
+compiling stm32f10x_usart.c...
+compiling system_stm32f10x.c...
+compiling core_cm3.c...
+assembling startup_stm32f10x_md_vl.s...
+compiling main.c...
+..\main.c(69): warning:  #177-D: variable "stat" was declared but never referenced
+        unsigned char stat;
+..\main.c(70): warning:  #177-D: variable "conf" was declared but never referenced
+        unsigned char conf;
+..\main.c: 2 warnings, 0 errors
+compiling stm32f10x_it.c...
+compiling nrf24l01.c...
+compiling SPI.c...
+compiling UART.c...
+compiling STM32vldiscovery.c...
+linking...
+Program Size: Code=3592 RO-data=372 RW-data=36 ZI-data=1028  
+".\Debug\GPIOToggle.axf" - 0 Error(s), 2 Warning(s).
+defined symbol USART_ReceiveData (referred from uart.o).
+.\Debug\GPIOToggle.axf: Error: L6218E: Undefined symbol USART_SendData (referred from uart.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 10 error messages.
+".\Debug\GPIOToggle.axf" - 10 Error(s), 0 Warning(s).
+Target not created
+ning(s).
+Target not created
+.\Debug\GPIOToggle.axf: Error: L6218E: Undefined symbol nrf24l01_irq_tx_ds_active (referred from main.o).
+.\Debug\GPIOToggle.axf: Error: L6218E: Undefined symbol nrf24l01_read_rx_payload (referred from main.o).
+.\Debug\GPIOToggle.axf: Error: L6218E: Undefined symbol nrf24l01_set_as_rx (referred from main.o).
+.\Debug\GPIOToggle.axf: Error: L6218E: Undefined symbol nrf24l01_set_as_tx (referred from main.o).
+.\Debug\GPIOToggle.axf: Error: L6218E: Undefined symbol nrf24l01_set_tx_addr (referred from main.o).
+.\Debug\GPIOToggle.axf: Error: L6218E: Undefined symbol nrf24l01_write_tx_payload (referred from main.o).
+.\Debug\GPIOToggle.axf: Error: L6218E: Undefined symbol uart_init (referred from main.o).
+.\Debug\GPIOToggle.axf: Error: L6218E: Undefined symbol uart_puts (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 14 error messages.
+".\Debug\GPIOToggle.axf" - 14 Error(s), 2 Warning(s).
+Target not created

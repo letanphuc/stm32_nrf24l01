@@ -1,0 +1,20 @@
+--cpu Cortex-M3
+".\debug\misc.o"
+".\debug\stm32f10x_exti.o"
+".\debug\stm32f10x_gpio.o"
+".\debug\stm32f10x_rcc.o"
+".\debug\stm32f10x_spi.o"
+".\debug\stm32f10x_usart.o"
+".\debug\system_stm32f10x.o"
+".\debug\core_cm3.o"
+".\debug\startup_stm32f10x_md_vl.o"
+".\debug\main.o"
+".\debug\stm32f10x_it.o"
+".\debug\nrf24l01.o"
+".\debug\spi.o"
+".\debug\uart.o"
+".\debug\stm32vldiscovery.o"
+--library_type=microlib --strict --scatter ".\Debug\GPIOToggle.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Debug\GPIOToggle.map" -o .\Debug\GPIOToggle.axf
