@@ -1,0 +1,16 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+D:\Program Files\Keil\CORTEX M4\My project\SPI_RF_Master\MDK-ARM\SPI_RF_Master.uvproj
+Project File Date:  05/24/2013
+
+<h2>Output:</h2>
+Build target 'SPI_RF_Master'
+compiling main.c...
+compiling nRF24L01P.c...
+linking...
+Program Size: Code=2876 RO-data=424 RW-data=96 ZI-data=1024  
+FromELF: creating hex file...
+".\obj\SPI_RF_Master.axf" - 0 Error(s), 0 Warning(s).

@@ -1,0 +1,30 @@
+*** Creating Trace Output File '.\obj\SPI_RF_Master.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\obj\main.o"'
+### List of Objects: adding '".\obj\stm32f4xx_it.o"'
+### List of Objects: adding '".\obj\system_stm32f4xx.o"'
+### List of Objects: adding '".\obj\misc.o"'
+### List of Objects: adding '".\obj\stm32f4xx_gpio.o"'
+### List of Objects: adding '".\obj\stm32f4xx_rcc.o"'
+### List of Objects: adding '".\obj\stm32f4xx_syscfg.o"'
+### List of Objects: adding '".\obj\stm32f4xx_spi.o"'
+### List of Objects: adding '".\obj\stm32f4xx_usart.o"'
+### List of Objects: adding '".\obj\nrf24l01p.o"'
+### List of Objects: adding '".\obj\startup_stm32f4xx.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M4 ".\obj\main.o" ".\obj\stm32f4xx_it.o" ".\obj\system_stm32f4xx.o" ".\obj\misc.o" ".\obj\stm32f4xx_gpio.o" ".\obj\stm32f4xx_rcc.o" ".\obj\stm32f4xx_syscfg.o" ".\obj\stm32f4xx_spi.o" ".\obj\stm32f4xx_usart.o" ".\obj\nrf24l01p.o" ".\obj\startup_stm32f4xx.o" 
+--library_type=microlib --strict --scatter ".\obj\SPI_RF_Master.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\lst\SPI_RF_Master.map" -o .\obj\SPI_RF_Master.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\obj\SPI_RF_Master.axf'
+### ADS-LD Command File: '.\obj\SPI_RF_Master.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\obj\SPI_RF_Master.lnp', Handle=0x00000754
+### Writing '.lnp' file
+### ADS-LD Command file '.\obj\SPI_RF_Master.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

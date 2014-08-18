@@ -1,0 +1,57 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+D:\Working\stm32_nrf\stm32_nrf24l01\Project\Examples\test\MDK-ARM\GPIOToggle.uvproj
+Project File Date:  08/18/2014
+
+<h2>Output:</h2>
+Build target 'GPIOToggle'
+compiling main.c...
+..\main.c(110): warning:  #223-D: function "RCC_AHB1PeriphClockCmd" declared implicitly
+    RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD, ENABLE);
+..\main.c(110): error:  #20: identifier "RCC_AHB1Periph_GPIOD" is undefined
+    RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD, ENABLE);
+..\main.c(114): error:  #20: identifier "GPIO_Mode_OUT" is undefined
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
+..\main.c(115): error:  #136: struct "<unnamed>" has no field "GPIO_OType"
+    GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+..\main.c(115): error:  #20: identifier "GPIO_OType_PP" is undefined
+    GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+..\main.c(116): error:  #20: identifier "GPIO_Speed_100MHz" is undefined
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_100MHz;
+..\main.c(117): error:  #136: struct "<unnamed>" has no field "GPIO_PuPd"
+    GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
+..\main.c(117): error:  #20: identifier "GPIO_PuPd_NOPULL" is undefined
+    GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
+..\main.c(107): warning:  #550-D: variable "status" was set but never used
+        unsigned char status;
+..\main.c(214): error:  #20: identifier "GPIO_Mode_AF" is undefined
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
+..\main.c(215): error:  #136: struct "<unnamed>" has no field "GPIO_OType"
+    GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+..\main.c(215): error:  #20: identifier "GPIO_OType_PP" is undefined
+    GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+..\main.c(216): error:  #136: struct "<unnamed>" has no field "GPIO_PuPd"
+    GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
+..\main.c(216): error:  #20: identifier "GPIO_PuPd_NOPULL" is undefined
+    GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
+..\main.c(220): warning:  #223-D: function "GPIO_PinAFConfig" declared implicitly
+        GPIO_PinAFConfig(GPIOD, GPIO_PinSource5, GPIO_AF_USART2);   // USART2_TX
+..\main.c(220): error:  #20: identifier "GPIO_AF_USART2" is undefined
+        GPIO_PinAFConfig(GPIOD, GPIO_PinSource5, GPIO_AF_USART2);   // USART2_TX
+..\main.c(224): warning:  #223-D: function "RCC_AHB1PeriphClockCmd" declared implicitly
+    RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD, ENABLE);
+..\main.c(224): error:  #20: identifier "RCC_AHB1Periph_GPIOD" is undefined
+    RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD, ENABLE);
+..\main.c: 4 warnings, 14 errors
+compiling nrf24l01.c...
+..\nrf24l01.c(2): error:  #5: cannot open source input file "stm32f4xx_spi.h": No such file or directory
+  #include "stm32f4xx_spi.h"
+..\nrf24l01.c: 0 warnings, 1 error
+".\Debug\GPIOToggle.axf" - 15 Error(s), 4 Warning(s).
+Target not created
+</pre>
+</body>
+</html>

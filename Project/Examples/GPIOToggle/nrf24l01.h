@@ -59,7 +59,7 @@
 // You should also change the include file name below to whatever the name of your 
 //   delay include file is.
 //////////////////////////////////////////////////////////////////////////////////
-#define delay_us(microseconds)		_delay_cycles(microseconds)
+//#define delay_us(microseconds)		_delay_cycles(microseconds)
 
 
 //////////////////////////////////////////////////////////////////////////////////

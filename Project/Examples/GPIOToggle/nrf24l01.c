@@ -889,7 +889,7 @@ bool nrf24l01_irq_pin_active()
 {
 	int return_val  = GPIO_ReadInputDataBit(IRQ_PORT, IRQ_PIN);
 	
-	if(return_val != 0)
+	if(return_val == 0)
 		return true;
 	else
 		return false;

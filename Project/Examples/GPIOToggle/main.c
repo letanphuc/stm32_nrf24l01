@@ -20,7 +20,7 @@ void configRF_txAddress (uint8_t * add){
 void RF_sendData(uint8_t * data, uint8_t len){
 	uint8_t i = 0;
 	for (i = 0; i < len; i++){
-		nrf24l01_write_tx_payload(data + i, 1, true);
+		nrf24l01_write_tx_payload(data + i, 1, 0);
 		while (!(nrf24l01_irq_pin_active() && nrf24l01_irq_tx_ds_active()));
 	}
 }
@@ -29,9 +29,15 @@ void RF_sendData(uint8_t * data, uint8_t len){
 uint8_t RF_sendByte(uint8_t byte){
 	uint8_t reply = 0;
 	uint8_t count = 0;
+	
+	uint8_t sampleByte[16] = {0};
 
 	nrf24l01_write_tx_payload(&byte, 1, true);
-	while (!(nrf24l01_irq_pin_active() && nrf24l01_irq_tx_ds_active()));
+	while (!(nrf24l01_irq_pin_active() && nrf24l01_irq_tx_ds_active())){
+		/* wait */
+		//nrf24l01_read_register(nrf24l01_
+		printf("Fifo status %d %x\n\r", byte, nrf24l01_get_fifo_status());
+	}
 	nrf24l01_irq_clear_all();
 	nrf24l01_set_as_rx(true);
 
@@ -78,7 +84,8 @@ int main(void) {
 	configRF_txAddress(destIP);
 	while (1) {
 
-//		//data = uart_getc();
+		//data = uart_getc();
+
 		data ++;
 		new_data = RF_sendByte(data);
 
@@ -88,10 +95,21 @@ int main(void) {
 			printf("Erororrororororr\n\r");
 
 		ToggleLED(); //toggle the on-board LED as visual indication that the loop has completed
-
+//		nrf24l01_read_register(nrf24l01_CONFIG,&data, 1);
+//		printf("Config: %d\n\r", data);
+//		
+//		nrf24l01_read_register(nrf24l01_STATUS,&data, 1);
+//		printf("Satus: %d\n\r", data);
 
 		/* test irq pin */
 //		printf("IRQ: %d \n\r", nrf24l01_irq_pin_active());
+
+//		/* test csn pin */
+//		nrf24l01_set_csn();
+//		nrf24l01_set_ce();
+//		delay_ms(50);
+//		nrf24l01_clear_csn();
+//		nrf24l01_clear_ce();
 //		
 //		/* test ce pin */
 //		if (data % 2 == 0){
@@ -120,7 +138,7 @@ int main(void) {
 //		printreg((char *) "status", stat);
 //		printreg((char *) "config", conf);
 
-		delay_ms(500);
+		delay_ms(200);
 	}
 	
 }
